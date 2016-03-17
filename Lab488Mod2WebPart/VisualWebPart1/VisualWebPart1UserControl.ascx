@@ -11,11 +11,11 @@
     <ContentTemplate>
         <div id="titleChecker">
             <p>Tenemos los siguientes subsitios:</p>
-            <asp:ListBox ID="lstWebs" runat="server" SelectionMode="Single" AutoPostBack="True" Rows="10"/>
+            <asp:ListBox ID="lstWebs" runat="server" SelectionMode="Single" AutoPostBack="True" Rows="10" OnSelectedIndexChanged="lstWebs_SelectedIndexChanged"/>
             <asp:Panel ID="pnlUpdateControls" runat="server">
                 <p>Selecciona un sitio para cambiarlo.</p>
                 <asp:TextBox ID="txtTitle" runat="server" Width="200px" />
-                <asp:Button ID="btnUpdate" Text="Update" runat="server" />
+                <asp:Button ID="btnUpdate" Text="Update" runat="server" OnClick="btnUpdate_Click" />
             </asp:Panel>
             <asp:Panel ID="pnlResult" runat="server">
                 <p>

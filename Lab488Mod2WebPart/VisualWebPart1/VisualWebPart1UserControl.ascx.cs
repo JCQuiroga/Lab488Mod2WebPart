@@ -77,7 +77,5 @@ namespace Lab488Mod2WebPart.VisualWebPart1
         {
             AddItems();
         }
-
-
-    }
+        }
 }
